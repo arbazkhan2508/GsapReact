@@ -1,0 +1,47 @@
+.project {
+    width: 80vw;
+    padding: 3vmax 5vmax;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 2px solid #dadada;
+    cursor: pointer;
+    transition: all cubic-bezier(0.23, 1, 0.32, 1) 0.5s;
+}
+.project:hover {
+    opacity: 0.4;
+}
+
+
+.project:last-of-type {
+    border-bottom: 2px solid #dadada;
+}
+
+.project h1 {
+    color: #1c1d20;
+    font-family: roobert;
+    /* font-family: "FH Giselle"; */
+    font-size: 4vmax;
+    font-weight: 500;
+}
+
+.project p {
+    color: #67686a;
+    font-size: 1.2vmax;
+    font-weight: 500;
+    font-family: roobert;
+    color: #78797a;
+    /* font-family: "FH Giselle"; */
+}
+
+.project h1,
+.project p {
+    transition: all cubic-bezier(0.23, 1, 0.32, 1) 0.5s;
+}
+
+.project:hover h1 {
+    transform: translateX(-20px);
+}
+.project:hover p {
+    transform: translateX(20px);
+}

@@ -1,0 +1,256 @@
+.landing{
+    /* display: flex;
+    align-items: center;
+   justify-content: center; */
+   font-size: 10vmax;
+   font-weight: 700;
+   font-family: roobert;
+   font-family: "Fh Giselle";
+    width: 100%;
+    height: 100vh;
+    /* background-color: yellow; */
+    background-image: url("https://dennissnellenberg.com/assets/img/DSC07033.jpg");
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    /* background-position: center;0 */
+    transition: transform 0.3s ease;
+    scale: 1.2;
+    background-color: #999d9e;
+  
+}
+.left{
+    width: 22%;
+    height: 12vh;
+    padding-right: 1vmax;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: flex-end;
+    border-top-right-radius: 5vmax;
+    border-bottom-right-radius: 5vmax;
+    background-color: #1c1d20;
+}
+
+.left small{
+    font-family: gilroy;
+
+    font-size: 1vmax;
+    color: #fff;
+    width: 20%;
+    margin-right: 3vmax;
+    font-weight: 550;
+}
+.left .glob{
+    position: relative;
+    width: 8vh;
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #999d9e;
+}
+
+.top_div{
+    position: relative;
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    align-items: flex-end;
+    /* background: yellow; */
+    justify-content: space-between;
+}
+.right{
+    padding-right: 12vmax;
+}
+.right svg{
+    width: 20vh !important;
+    height: 20vh !important;
+    margin-bottom: 2vmax;
+}
+.top_div h6{
+    font-size: 2.3vmax;
+    color: #fff;
+    line-height: 1.3;
+    font-family: roobert;
+    font-weight: 600;
+    letter-spacing: .5px;
+    
+}
+.section2{
+    width: 100%;
+    height: 100vh;
+    background-color: teal;
+}
+.bottom{
+    display: flex;
+    align-items: flex-start;
+
+    width: 100%;
+    height: 35vh;
+    overflow-x: auto;
+    /* background-color: yellow; */
+}
+.bottom::-webkit-scrollbar{
+    display:none ;
+}
+.bottom h1{
+    font-size: 10vmax;
+    margin-right: 70px;
+    font-family: roobert;
+    font-weight: 500;
+    white-space: nowrap;
+    color: #fff;
+}
+
+
+.sliderContainer {
+    position: absolute;
+    /* background-color: yellow; */
+    /* padding-bottom:30vh; */
+    top: calc(100vh - 280px);
+}
+
+.slider {
+    position: relative;
+    width: 100%;
+    display: flex;
+    white-space: nowrap;
+}
+
+.slider p {
+    font-size:10vmax;
+    position: relative;
+    margin: 0px;
+    color: white;
+    font-weight: 400;
+    padding-right: 50px;
+    font-family: roobert;
+}
+
+.slider p:nth-of-type(2) {
+    position: absolute;
+    left: 100%;
+    top: 0;
+}
+
+
+
+
+.globe {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width:3em;
+    height: 3em;
+    font-size: .8em;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    overflow: hidden;
+    will-change: transform;
+}
+.globewrap {
+    /* height: 5vh !important;
+    width: 5vh !important; */
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: block;
+    border-radius: 50%;
+    transform: translate(-50%, -50%) rotate(30deg);
+    animation: globe 5.4s cubic-bezier(0.35, 0, 0.65, 1) infinite;
+    overflow: hidden;
+    box-shadow: inset 0px 0px 0px 0.125em white;
+    /* background-color: red; */
+
+}
+@keyframes globe {
+    0% {
+        transform: translate(-50%, -50%) rotate(15deg);
+    }
+    50% {
+        transform: translate(-50%, -50%) rotate(-15deg);
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(15deg);
+    }
+    
+}
+
+.globe .circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    box-shadow: inset 0.1em 0px 0px 0.08em white;
+    animation: circle1 2.7s linear infinite;
+    font-size: .75em;
+ 
+}
+.globe .circle:nth-child(1) {
+    animation-delay: -1.8s;
+}
+.globe .circle:nth-child(2) {
+    animation-delay: -.9s;
+}
+@keyframes circle1{
+    0% {
+        border-radius: 50%;
+        box-shadow: inset 0.1em 0px 0px 0.08em white;
+        width: 100%;
+    }
+    
+    49% {
+        border-radius: 50%;
+        box-shadow: inset 0.1em 0px 0px 0.08em white;
+        background: transparent;
+    }
+    50% {
+        border-radius: 0%;
+        width: 0.175em;
+        background: white;
+    }
+    51% {
+        border-radius: 50%;
+        box-shadow: inset -0.1em 0px 0px 0.08em white;
+        background: transparent;
+    }
+    100% {
+        border-radius: 50%;
+        box-shadow: inset -0.1em 0px 0px 0.08em white;
+        width: 100%;
+    }
+}
+.globe .circlehor {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 150%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    height: 55%;
+    box-shadow: inset 0px 0px 0px 0.15em white;
+    font-size: .75em;
+}
+.globe .circlehormiddle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 150%;
+    transform: translate(-50%, -50%);
+    border-radius: 0%;
+    height: 0.15em;
+    background:white;
+    font-size: .75em;
+    
+}
+
+
+
+

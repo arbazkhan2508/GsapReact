@@ -1,0 +1,34 @@
+.roundedButton {
+    padding: 1.5rem 2.5rem;
+    background-color: transparent;
+    border-radius: 50px;
+    border: 1px solid #000;
+    position: relative;
+    overflow: hidden;
+    position: relative;
+}
+
+.roundedButton p {
+    position: relative;
+    z-index: 2;
+    transition: color 0.3s ease-in;
+}
+.roundedButton:hover p {
+    color: #fff;
+}
+
+
+.circle {
+    transform-origin: center;
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    left: 0%;
+    /* top: 20%; */
+    width: 100%;
+    height: 200px;
+    /* scale: 1; */
+    border-radius: 50%;
+    /* transform: translateX(-50%); */
+    background-color: rgb(56, 56, 198);
+}

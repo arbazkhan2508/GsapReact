@@ -1,0 +1,47 @@
+.gallery {
+    width: 100vw;
+    /* height: 100vh; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding-bottom: 10vh;
+}
+.head{
+    padding: 0 2vmax;
+    width: 80%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.head h1{
+    font-family: roobert;
+    font-size: 2vmax;
+    color: #abacad;
+    color: #111;
+    font-weight: 550;
+}
+.txt{
+    padding: 0 2vmax;
+    padding-top:35vh;
+    display: flex;
+    align-items: center;
+    width: 80%;
+    justify-content: space-between;
+}
+.txt h1{
+    font-size: 2vmax;
+    font-family: roobert;
+    line-height: 1.4;
+    color: #1c1d20;
+    font-weight: 500;
+}
+.txt p{
+    font-size: 1.1vmax;
+    font-family: roobert;
+    line-height: 1.4;
+    /* color: #4e4f51; */
+    font-weight: 600;
+}
